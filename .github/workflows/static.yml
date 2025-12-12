@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nikah Invitation - Fareeha & Saif</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Great+Vibes&family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&family=Parisienne&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Poppins', sans-serif; background: #f9f3e9; color: #333; padding: 20px; }
+        .card { max-width: 800px; margin: 0 auto; background: white; border-radius: 20px; border: 10px solid gold; }
+        .header { background: #0d5a42; color: gold; text-align: center; padding: 25px; }
+        .header h1 { font-family: 'Great Vibes', cursive; font-size: 3rem; }
+        .content { padding: 25px; text-align: center; }
+        .couple { margin: 25px 0; padding: 20px; background: rgba(218, 165, 32, 0.1); border-radius: 15px; }
+        .bride, .groom { font-family: 'Dancing Script', cursive; font-size: 2.5rem; color: #0d5a42; }
+        .parents { background: gold; color: #0d5a42; padding: 25px; margin: 25px auto; font-size: 2.5rem; font-family: 'Parisienne', cursive; max-width: 600px; border-radius: 10px; }
+        .event { background: white; padding: 25px; margin: 25px auto; max-width: 550px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        @media (max-width: 768px) { .header h1 { font-size: 2.2rem; } .bride, .groom { font-size: 2rem; } .parents { font-size: 1.8rem; padding: 20px; } }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="header">
+            <h1>Wedding Invitation</h1>
+            <p>بسم الله الرحمن الرحيم</p>
+            <p>In the name of Allah, the Most Gracious, the Most Merciful</p>
+        </div>
+        <div class="content">
+            <div style="background: rgba(13,90,66,0.1); padding: 15px; border-radius: 10px; margin: 20px 0;">
+                <h2>WITH THE BLESSINGS OF ALLAH</h2>
+                <h3>AND THE GRACE OF THE PROPHET (صلى الله عليه وسلم)</h3>
+            </div>
+            
+            <h2 style="font-family: 'Playfair Display'; font-size: 2rem; color: #0d5a42;">YOU ARE CORDIALLY INVITED</h2>
+            <p>On the marriage of our daughter</p>
+            
+            <div class="couple">
+                <div class="bride">Syeda Fareeha Ahmed</div>
+                <div style="font-size: 1.3rem; color: gold; margin: 15px 0;">with</div>
+                <div class="groom">Mohammad Saif</div>
+                <p>Son of Mohammed Yousuf Sahab</p>
+            </div>
+            
+            <!-- ONLY NIKAH EVENT -->
+            <div class="event">
+                <h3><i class="fas fa-mosque"></i> MARRIAGE (NIKAH) CEREMONY</h3>
+                <div style="font-size: 1.6rem; color: #b8860b; margin: 10px 0; font-weight: bold;">SUNDAY, 21ST DECEMBER 2025</div>
+                <div style="color: #1a7a5a; font-style: italic;">1st Rajab-ul-Murajjab 1447 Hijri</div>
+                
+                <div style="text-align: left; margin-top: 20px;">
+                    <div style="font-weight: bold; color: #0d5a42; margin-top: 15px;">Aqd in Masjid-e-Ahmed</div>
+                    <div>Ahmed Nagar, Sangareddy</div>
+                    
+                    <div style="color: #b8860b; font-weight: bold; margin-top: 15px;">After Isha (8:00 PM)</div>
+                    
+                    <div style="font-weight: bold; color: #0d5a42; margin-top: 20px;">Dinner Venue:</div>
+                    <div>King's Palace Function Hall</div>
+                    <div>Opp. ITI, Sangareddy</div>
+                </div>
+            </div>
+            
+            <div style="background: rgba(13,90,66,0.08); padding: 15px; border-radius: 10px; margin: 25px 0; font-style: italic;">
+                <div style="font-family: 'Traditional Arabic'; font-size: 1.3rem; color: #0d5a42;">الزواج من سنتي فمن رغب عن سنتي فليس مني</div>
+                <p>"Marriage is my Sunnah. Whoever turns away from my Sunnah is not from me." (Hadith)</p>
+            </div>
+            
+            <div style="font-size: 1.3rem; color: #0d5a42; margin: 20px 0; font-weight: bold;">
+                WE SINCERELY REQUEST YOUR PRESENCE AND PRAYERS<br>
+                TO BLESS THE NEW BEGINNING OF THE COUPLE
+            </div>
+            
+            <div class="parents">Mrs. & Mr. Syed Ahmeduddin Qadri</div>
+            
+            <div style="background: #0d5a42; padding: 20px; border-radius: 10px; margin: 30px 0;">
+                <div style="font-family: 'Great Vibes'; font-size: 2.5rem; color: gold;">Best Compliments From:</div>
+                <div style="font-size: 2rem; color: white; font-weight: bold;">Near & Dear</div>
+            </div>
+            
+            <div style="margin-top: 20px; padding-top: 20px; border-top: 1px solid #ddd;">
+                <div style="font-family: 'Traditional Arabic'; font-size: 1.5rem; color: #0d5a42;">بَارَكَ اللهُ لَكَ وَبَارَكَ عَلَيْكَ وَجَمَعَ بَيْنَكُمَا فِي خَيْر</div>
+                <p>"May Allah bless you and shower His blessings upon you and unite you in goodness."</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
