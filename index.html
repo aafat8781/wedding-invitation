@@ -1,1 +1,472 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitations - Syeda Fareeha Ahmed & Mohammad Saif</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Homepage Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(135deg, #f9f3f3 0%, #f5e6e6 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            color: #333;
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        .homepage-container {
+            max-width: 900px;
+            width: 100%;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+            padding: 50px 40px;
+            position: relative;
+            overflow: hidden;
+            border: 8px solid #f8e3e3;
+        }
+
+        .homepage-container::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, transparent 30%, #fff0f0 70%);
+            opacity: 0.3;
+        }
+
+        .main-title {
+            font-family: 'Dancing Script', cursive;
+            font-size: 4.5rem;
+            color: #0d5a42;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+            position: relative;
+            z-index: 1;
+        }
+
+        .subtitle {
+            font-size: 1.5rem;
+            color: #666;
+            margin-bottom: 30px;
+            font-style: italic;
+            position: relative;
+            z-index: 1;
+        }
+
+        .date-display {
+            background: linear-gradient(135deg, #0d5a42 0%, #8B4513 100%);
+            color: white;
+            padding: 20px 40px;
+            border-radius: 15px;
+            display: inline-block;
+            margin: 30px 0;
+            font-size: 1.8rem;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            position: relative;
+            z-index: 1;
+        }
+
+        .hijri-date {
+            font-size: 1.2rem;
+            color: #ffd700;
+            margin-top: 10px;
+        }
+
+        .couple-names {
+            font-family: 'Great Vibes', cursive;
+            font-size: 3rem;
+            color: #b76e79;
+            margin: 30px 0;
+            line-height: 1.4;
+            position: relative;
+            z-index: 1;
+        }
+
+        .invitation-options {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin: 60px 0;
+            flex-wrap: wrap;
+            position: relative;
+            z-index: 1;
+        }
+
+        .invitation-card {
+            background: white;
+            border-radius: 15px;
+            padding: 40px 30px;
+            width: 350px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            transition: all 0.4s ease;
+            text-decoration: none;
+            color: inherit;
+            border: 5px solid transparent;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .invitation-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at top right, rgba(255,255,255,0.8), transparent 70%);
+            opacity: 0.5;
+        }
+
+        .wedding-card {
+            border-color: #0d5a42;
+        }
+
+        .valima-card {
+            border-color: #8B4513;
+        }
+
+        .invitation-card:hover {
+            transform: translateY(-15px) scale(1.03);
+            box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+        }
+
+        .card-icon {
+            font-size: 4rem;
+            margin-bottom: 25px;
+            height: 80px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .wedding-icon {
+            color: #0d5a42;
+        }
+
+        .valima-icon {
+            color: #8B4513;
+        }
+
+        .card-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .wedding-title {
+            color: #0d5a42;
+        }
+
+        .valima-title {
+            color: #8B4513;
+        }
+
+        .card-details {
+            color: #666;
+            line-height: 1.7;
+            margin-bottom: 30px;
+            font-size: 1.2rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .view-btn {
+            display: inline-block;
+            padding: 15px 40px;
+            background: transparent;
+            border: 3px solid;
+            border-radius: 50px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-size: 1.2rem;
+            position: relative;
+            z-index: 1;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .wedding-btn {
+            color: #0d5a42;
+            border-color: #0d5a42;
+        }
+
+        .wedding-btn:hover {
+            background: #0d5a42;
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(13,90,66,0.3);
+        }
+
+        .valima-btn {
+            color: #8B4513;
+            border-color: #8B4513;
+        }
+
+        .valima-btn:hover {
+            background: #8B4513;
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(139,69,19,0.3);
+        }
+
+        .arabic-blessing {
+            font-family: 'Traditional Arabic', 'Arial', sans-serif;
+            font-size: 2.2rem;
+            color: #0d5a42;
+            margin: 50px 0 30px;
+            line-height: 1.8;
+            position: relative;
+            z-index: 1;
+        }
+
+        .english-blessing {
+            font-size: 1.3rem;
+            color: #666;
+            margin: 20px 0 40px;
+            font-style: italic;
+            line-height: 1.6;
+            position: relative;
+            z-index: 1;
+        }
+
+        .footer-note {
+            margin-top: 50px;
+            color: #666;
+            font-size: 1.1rem;
+            border-top: 2px solid #f0f0f0;
+            padding-top: 25px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .floating-hearts {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .heart {
+            position: absolute;
+            font-size: 20px;
+            opacity: 0;
+            animation: floatUp 20s linear infinite;
+        }
+
+        @keyframes floatUp {
+            0% {
+                transform: translateY(100vh) rotate(0deg);
+                opacity: 0;
+            }
+            10% {
+                opacity: 0.7;
+            }
+            90% {
+                opacity: 0.7;
+            }
+            100% {
+                transform: translateY(-100px) rotate(360deg);
+                opacity: 0;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .homepage-container {
+                padding: 30px 20px;
+            }
+            
+            .main-title {
+                font-size: 3.2rem;
+            }
+            
+            .couple-names {
+                font-size: 2.2rem;
+            }
+            
+            .invitation-options {
+                flex-direction: column;
+                align-items: center;
+                gap: 30px;
+            }
+            
+            .invitation-card {
+                width: 100%;
+                max-width: 350px;
+                padding: 30px 20px;
+            }
+            
+            .date-display {
+                font-size: 1.4rem;
+                padding: 15px 25px;
+            }
+            
+            .arabic-blessing {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Great+Vibes&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="homepage-container">
+        <!-- Floating hearts animation -->
+        <div class="floating-hearts" id="floatingHearts"></div>
+        
+        <header>
+            <div class="arabic-blessing">بسم الله الرحمن الرحيم</div>
+            <h1 class="main-title">Wedding Invitations</h1>
+            <p class="subtitle">We request the honor of your presence at our celebrations</p>
+            
+            <div class="couple-names">
+                Syeda Fareeha Ahmed<br>
+                <span style="font-size: 2rem; color: #8B4513;">&</span><br>
+                Mohammad Saif
+            </div>
+            
+            <div class="date-display">
+                <i class="fas fa-calendar-alt"></i> 21st - 22nd December 2025
+                <div class="hijri-date">
+                    1st - 2nd Rajab-ul-Murajjab 1447 AH
+                </div>
+            </div>
+        </header>
+        
+        <div class="invitation-options">
+            <!-- Wedding Invitation Card -->
+            <a href="wedding.html" class="invitation-card wedding-card">
+                <div class="card-icon wedding-icon">
+                    <i class="fas fa-mosque"></i>
+                </div>
+                <h2 class="card-title wedding-title">Wedding Ceremony</h2>
+                <div class="card-details">
+                    <strong>Sunday, 21st December 2025</strong><br><br>
+                    <i class="fas fa-clock"></i> 8:00 PM (After Isha)<br>
+                    <i class="fas fa-map-marker-alt"></i> Masjid-e-Ahmed<br>
+                    Ahmed Nagar, Sangareddy<br><br>
+                    <em>Followed by Dinner at King's Palace Function Hall</em>
+                </div>
+                <span class="view-btn wedding-btn">View Invitation <i class="fas fa-arrow-right"></i></span>
+            </a>
+            
+            <!-- Valima Invitation Card -->
+            <a href="https://aafat8781.github.io/valima-reception/" class="invitation-card valima-card">
+                <div class="card-icon valima-icon">
+                    <i class="fas fa-crown"></i>
+                </div>
+                <h2 class="card-title valima-title">Valima Reception</h2>
+                <div class="card-details">
+                    <strong>Monday, 22nd December 2025</strong><br><br>
+                    <i class="fas fa-clock"></i> 7:00 PM onwards<br>
+                    <i class="fas fa-map-marker-alt"></i> Royal Grand Palace<br>
+                    Near Madina Circle, Sangareddy<br><br>
+                    <em>Dinner will be served | Traditional attire</em>
+                </div>
+                <span class="view-btn valima-btn">View Invitation <i class="fas fa-arrow-right"></i></span>
+            </a>
+        </div>
+        
+        <div class="arabic-blessing">
+            بارك الله لكما وبارك عليكما وجمع بينكما في خير
+        </div>
+        
+        <div class="english-blessing">
+            "May Allah bless you both and shower His blessings upon you<br>
+            and unite you in goodness."
+        </div>
+        
+        <div class="footer-note">
+            <p><i class="fas fa-hands-praying"></i> Your prayers and gracious presence are humbly requested</p>
+            <p style="margin-top: 15px; font-size: 1rem; color: #888;">
+                <i class="fas fa-info-circle"></i> Formal Islamic attire requested for both events<br>
+                <i class="fas fa-phone"></i> For inquiries: +91 98765 43210
+            </p>
+            <p style="margin-top: 20px; font-size: 0.9rem; color: #aaa;">
+                May Allah accept our humble efforts and bless the couple with eternal happiness.
+            </p>
+        </div>
+    </div>
+
+    <script>
+        // Create floating hearts animation
+        document.addEventListener('DOMContentLoaded', function() {
+            const floatingHearts = document.getElementById('floatingHearts');
+            const hearts = ['❤️', '💚', '🤍', '💛', '🕌', '☪️'];
+            
+            function createHeart() {
+                const heart = document.createElement('div');
+                heart.className = 'heart';
+                heart.innerHTML = hearts[Math.floor(Math.random() * hearts.length)];
+                heart.style.left = Math.random() * 100 + '%';
+                heart.style.fontSize = (15 + Math.random() * 25) + 'px';
+                heart.style.color = ['#0d5a42', '#8B4513', '#b76e79', '#D2691E'][Math.floor(Math.random() * 4)];
+                heart.style.animationDuration = (15 + Math.random() * 15) + 's';
+                heart.style.animationDelay = Math.random() * 5 + 's';
+                
+                floatingHearts.appendChild(heart);
+                
+                // Remove heart after animation completes
+                setTimeout(() => {
+                    heart.remove();
+                }, 30000);
+            }
+            
+            // Create initial hearts
+            for (let i = 0; i < 15; i++) {
+                setTimeout(createHeart, i * 500);
+            }
+            
+            // Keep creating hearts periodically
+            setInterval(createHeart, 2000);
+            
+            // Animate cards on load
+            const cards = document.querySelectorAll('.invitation-card');
+            cards.forEach((card, index) => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(50px) scale(0.9)';
+                
+                setTimeout(() => {
+                    card.style.transition = 'all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275)';
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0) scale(1)';
+                }, 300 * (index + 1));
+            });
+            
+            // Add click sound effect (optional)
+            cards.forEach(card => {
+                card.addEventListener('click', function() {
+                    // You can add a subtle click effect here
+                    this.style.transform = 'scale(0.98)';
+                    setTimeout(() => {
+                        this.style.transform = '';
+                    }, 150);
+                });
+            });
+            
+            // Log a beautiful message
+            console.log(`%c🎊 Welcome to the Wedding Invitations 🎊\n%cMay Allah bless the couple with eternal happiness and prosperity.`, 
+                'color: #0d5a42; font-size: 16px; font-weight: bold;',
+                'color: #8B4513; font-size: 14px;');
+        });
+    </script>
+</body>
+</html>
