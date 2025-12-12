@@ -8,7 +8,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        /* Additional inline styles */
         .date-highlight {
             background: linear-gradient(135deg, #0d5a42 0%, #1a7a5a 100%);
             color: white;
@@ -110,20 +109,19 @@
             </div>
             
             <div style="margin-top: 30px; padding-top: 25px; border-top: 2px solid #ddd;">
-                <div class="arabic-text" style="margin-bottom: 15px;">بَارَكَ اللهُ لَكَ وَبَارَكَ عَلَيْكَ وَجَمَعَ بَيْنَكُمَا فِي خَيْر</div>
-                <p style="font-size: 1.2rem; color: #0d5a42; font-style: italic;">
+                <div class="arabic-text" style="margin-bottom: 15px; font-size: 2rem;">
+                    بَارَكَ اللهُ لَكَ وَبَارَكَ عَلَيْكَ وَجَمَعَ بَيْنَكُمَا فِي خَيْر
+                </div>
+                <p style="font-size: 1.2rem; color: #0d5a42; font-style: italic; line-height: 1.6;">
                     "May Allah bless you and shower His blessings upon you and unite you in goodness."
                 </p>
             </div>
             
-            <div style="margin-top: 30px; font-size: 0.9rem; color: #666; border-top: 1px solid #eee; padding-top: 15px;">
-                <p><i class="fas fa-info-circle"></i> For inquiries: +91 XXXXX XXXXX | Formal Islamic attire requested</p>
-            </div>
+            <!-- REMOVED THE INQUIRY LINE FROM HERE -->
         </div>
     </div>
 
     <script>
-        // Simple Islamic greeting
         document.addEventListener('DOMContentLoaded', function() {
             const hours = new Date().getHours();
             let greeting = "السَّلَامُ عَلَيْكُمْ";
@@ -131,7 +129,6 @@
             if (hours < 12) greeting = "صباح الخير";
             else if (hours < 18) greeting = "مساء الخير";
             
-            // Optional: Display greeting in console
             console.log(`%c${greeting} - Welcome to the Wedding Invitation`, 
                 'color: #0d5a42; font-size: 14px; font-weight: bold;');
         });
