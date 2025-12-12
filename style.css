@@ -1,34 +1,196 @@
-/* Navigation Styles */
-.navigation {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    z-index: 1000;
+/* Islamic Wedding Invitation Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.nav-btn {
-    background: rgba(255, 255, 255, 0.9);
-    padding: 10px 20px;
-    border-radius: 50px;
-    text-decoration: none;
-    color: #b76e79;
-    font-weight: bold;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+body {
+    font-family: 'Georgia', serif;
+    background: linear-gradient(135deg, #f5f5dc 0%, #fff8dc 100%);
+    min-height: 100vh;
     display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 8px;
-    transition: all 0.3s ease;
-    border: 2px solid #f8e3e3;
+    padding: 20px;
+    color: #333;
+    line-height: 1.6;
 }
 
-.nav-btn:hover {
+.card {
     background: white;
-    transform: translateX(-5px);
-    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    padding: 40px;
+    max-width: 800px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    border: 10px solid #0d5a42;
 }
 
-/* For Valima page */
-.valima-theme .nav-btn {
-    color: #2c7873;
-    border-color: #6fb3b8;
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><text x="50%" y="50%" font-family="Arial" font-size="14" fill="rgba(13,90,66,0.03)" text-anchor="middle" dominant-baseline="middle">ﷲ</text></svg>');
+    background-size: 150px;
+    opacity: 0.1;
+    pointer-events: none;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #0d5a42;
+    padding-bottom: 20px;
+}
+
+.header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    color: #0d5a42;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+.header p {
+    font-size: 1.2rem;
+    color: #555;
+    margin: 5px 0;
+}
+
+.header p:first-of-type {
+    font-family: 'Traditional Arabic', 'Arial', sans-serif;
+    font-size: 1.8rem;
+    color: #0d5a42;
+    margin-bottom: 10px;
+}
+
+.content {
+    text-align: center;
+}
+
+.couple {
+    margin: 30px 0;
+    padding: 25px;
+    background: linear-gradient(135deg, rgba(13,90,66,0.1) 0%, rgba(184,134,11,0.1) 100%);
+    border-radius: 15px;
+    border: 2px dashed #b8860b;
+}
+
+.bride, .groom {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3.5rem;
+    color: #0d5a42;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.couple p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+.event {
+    background: white;
+    border: 3px solid #0d5a42;
+    border-radius: 15px;
+    padding: 25px;
+    margin: 30px 0;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(13,90,66,0.1);
+}
+
+.event h3 {
+    color: #0d5a42;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', serif;
+}
+
+.event h3 i {
+    color: #b8860b;
+    margin-right: 10px;
+}
+
+.event div {
+    margin: 8px 0;
+    font-size: 1.2rem;
+}
+
+.parents {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: #0d5a42;
+    margin: 30px 0;
+    padding: 15px;
+    background: rgba(184,134,11,0.1);
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+/* Arabic text styling */
+.arabic-text {
+    font-family: 'Traditional Arabic', 'Arial', sans-serif;
+    font-size: 1.8rem;
+    color: #0d5a42;
+    margin: 20px 0;
+    line-height: 1.8;
+}
+
+.hadith-box {
+    background: rgba(13,90,66,0.08);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 25px 0;
+    font-style: italic;
+    border-right: 5px solid #0d5a42;
+}
+
+.hadith-box p {
+    color: #0d5a42;
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .card {
+        padding: 20px;
+        border-width: 5px;
+    }
+    
+    .header h1 {
+        font-size: 2.2rem;
+    }
+    
+    .bride, .groom {
+        font-size: 2.5rem;
+    }
+    
+    .header p:first-of-type {
+        font-size: 1.5rem;
+    }
+    
+    .event h3 {
+        font-size: 1.4rem;
+    }
+}
+
+/* Printing styles */
+@media print {
+    body {
+        background: white !important;
+    }
+    
+    .card {
+        box-shadow: none;
+        border: 3px solid #0d5a42;
+    }
 }
