@@ -3,30 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nikah Invitation - Fareeha & Saif</title>
+    <title>Wedding Invitation - Syeda Fareeha Ahmed & Mohammad Saif</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Great+Vibes&family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&family=Parisienne&display=swap" rel="stylesheet">
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Poppins', sans-serif; background: #f9f3e9; color: #333; padding: 20px; }
-        .card { max-width: 800px; margin: 0 auto; background: white; border-radius: 20px; border: 10px solid gold; }
-        .header { background: #0d5a42; color: gold; text-align: center; padding: 25px; }
-        .header h1 { font-family: 'Great Vibes', cursive; font-size: 3rem; }
-        .content { padding: 25px; text-align: center; }
-        .couple { margin: 25px 0; padding: 20px; background: rgba(218, 165, 32, 0.1); border-radius: 15px; }
-        .bride, .groom { font-family: 'Dancing Script', cursive; font-size: 2.5rem; color: #0d5a42; }
-        .parents { background: gold; color: #0d5a42; padding: 25px; margin: 25px auto; font-size: 2.5rem; font-family: 'Parisienne', cursive; max-width: 600px; border-radius: 10px; }
-        .event { background: white; padding: 25px; margin: 25px auto; max-width: 550px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
-        @media (max-width: 768px) { .header h1 { font-size: 2.2rem; } .bride, .groom { font-size: 2rem; } .parents { font-size: 1.8rem; padding: 20px; } }
+        /* Additional inline styles */
+        .date-highlight {
+            background: linear-gradient(135deg, #0d5a42 0%, #1a7a5a 100%);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 10px;
+            margin: 20px 0;
+            display: inline-block;
+            font-size: 1.8rem;
+            box-shadow: 0 5px 15px rgba(13,90,66,0.3);
+        }
+        
+        .islamic-pattern {
+            background-image: 
+                radial-gradient(circle at 25px 25px, rgba(13,90,66,0.1) 2%, transparent 2.5%),
+                radial-gradient(circle at 75px 75px, rgba(184,134,11,0.1) 2%, transparent 2.5%);
+            background-size: 100px 100px;
+        }
     </style>
 </head>
 <body>
-    <div class="card">
+    <div class="card islamic-pattern">
         <div class="header">
             <h1>Wedding Invitation</h1>
             <p>بسم الله الرحمن الرحيم</p>
             <p>In the name of Allah, the Most Gracious, the Most Merciful</p>
         </div>
+        
         <div class="content">
             <div style="background: rgba(13,90,66,0.1); padding: 15px; border-radius: 10px; margin: 20px 0;">
                 <h2>WITH THE BLESSINGS OF ALLAH</h2>
@@ -46,43 +55,86 @@
             <!-- ONLY NIKAH EVENT -->
             <div class="event">
                 <h3><i class="fas fa-mosque"></i> MARRIAGE (NIKAH) CEREMONY</h3>
-                <div style="font-size: 1.6rem; color: #b8860b; margin: 10px 0; font-weight: bold;">SUNDAY, 21ST DECEMBER 2025</div>
-                <div style="color: #1a7a5a; font-style: italic;">1st Rajab-ul-Murajjab 1447 Hijri</div>
                 
-                <div style="text-align: left; margin-top: 20px;">
-                    <div style="font-weight: bold; color: #0d5a42; margin-top: 15px;">Aqd in Masjid-e-Ahmed</div>
-                    <div>Ahmed Nagar, Sangareddy</div>
+                <div class="date-highlight">
+                    SUNDAY, 21ST DECEMBER 2025
+                </div>
+                
+                <div style="color: #1a7a5a; font-style: italic; font-size: 1.2rem;">
+                    1st Rajab-ul-Murajjab 1447 Hijri
+                </div>
+                
+                <div style="text-align: left; margin-top: 25px; padding: 0 20px;">
+                    <div style="display: flex; align-items: center; margin: 15px 0;">
+                        <i class="fas fa-map-marker-alt" style="color: #0d5a42; margin-right: 10px; font-size: 1.2rem;"></i>
+                        <div>
+                            <div style="font-weight: bold; color: #0d5a42;">Aqd in Masjid-e-Ahmed</div>
+                            <div>Ahmed Nagar, Sangareddy</div>
+                        </div>
+                    </div>
                     
-                    <div style="color: #b8860b; font-weight: bold; margin-top: 15px;">After Isha (8:00 PM)</div>
+                    <div style="display: flex; align-items: center; margin: 15px 0;">
+                        <i class="fas fa-clock" style="color: #b8860b; margin-right: 10px; font-size: 1.2rem;"></i>
+                        <div>
+                            <div style="color: #b8860b; font-weight: bold;">After Isha (8:00 PM)</div>
+                        </div>
+                    </div>
                     
-                    <div style="font-weight: bold; color: #0d5a42; margin-top: 20px;">Dinner Venue:</div>
-                    <div>King's Palace Function Hall</div>
-                    <div>Opp. ITI, Sangareddy</div>
+                    <div style="display: flex; align-items: flex-start; margin: 20px 0;">
+                        <i class="fas fa-utensils" style="color: #0d5a42; margin-right: 10px; font-size: 1.2rem; margin-top: 5px;"></i>
+                        <div>
+                            <div style="font-weight: bold; color: #0d5a42;">Dinner Venue:</div>
+                            <div>King's Palace Function Hall</div>
+                            <div>Opp. ITI, Sangareddy</div>
+                        </div>
+                    </div>
                 </div>
             </div>
             
-            <div style="background: rgba(13,90,66,0.08); padding: 15px; border-radius: 10px; margin: 25px 0; font-style: italic;">
-                <div style="font-family: 'Traditional Arabic'; font-size: 1.3rem; color: #0d5a42;">الزواج من سنتي فمن رغب عن سنتي فليس مني</div>
+            <div class="hadith-box">
+                <div class="arabic-text">الزواج من سنتي فمن رغب عن سنتي فليس مني</div>
                 <p>"Marriage is my Sunnah. Whoever turns away from my Sunnah is not from me." (Hadith)</p>
             </div>
             
-            <div style="font-size: 1.3rem; color: #0d5a42; margin: 20px 0; font-weight: bold;">
+            <div style="font-size: 1.3rem; color: #0d5a42; margin: 25px 0; font-weight: bold; line-height: 1.8;">
                 WE SINCERELY REQUEST YOUR PRESENCE AND PRAYERS<br>
                 TO BLESS THE NEW BEGINNING OF THE COUPLE
             </div>
             
             <div class="parents">Mrs. & Mr. Syed Ahmeduddin Qadri</div>
             
-            <div style="background: #0d5a42; padding: 20px; border-radius: 10px; margin: 30px 0;">
-                <div style="font-family: 'Great Vibes'; font-size: 2.5rem; color: gold;">Best Compliments From:</div>
-                <div style="font-size: 2rem; color: white; font-weight: bold;">Near & Dear</div>
+            <div style="background: #0d5a42; padding: 25px; border-radius: 10px; margin: 30px 0; position: relative; overflow: hidden;">
+                <div style="position: absolute; top: -20px; right: -20px; font-size: 4rem; color: rgba(255,255,255,0.1);">ﷲ</div>
+                <div style="font-family: 'Great Vibes'; font-size: 2.5rem; color: gold; position: relative; z-index: 1;">Best Compliments From:</div>
+                <div style="font-size: 2rem; color: white; font-weight: bold; position: relative; z-index: 1;">Near & Dear</div>
             </div>
             
-            <div style="margin-top: 20px; padding-top: 20px; border-top: 1px solid #ddd;">
-                <div style="font-family: 'Traditional Arabic'; font-size: 1.5rem; color: #0d5a42;">بَارَكَ اللهُ لَكَ وَبَارَكَ عَلَيْكَ وَجَمَعَ بَيْنَكُمَا فِي خَيْر</div>
-                <p>"May Allah bless you and shower His blessings upon you and unite you in goodness."</p>
+            <div style="margin-top: 30px; padding-top: 25px; border-top: 2px solid #ddd;">
+                <div class="arabic-text" style="margin-bottom: 15px;">بَارَكَ اللهُ لَكَ وَبَارَكَ عَلَيْكَ وَجَمَعَ بَيْنَكُمَا فِي خَيْر</div>
+                <p style="font-size: 1.2rem; color: #0d5a42; font-style: italic;">
+                    "May Allah bless you and shower His blessings upon you and unite you in goodness."
+                </p>
+            </div>
+            
+            <div style="margin-top: 30px; font-size: 0.9rem; color: #666; border-top: 1px solid #eee; padding-top: 15px;">
+                <p><i class="fas fa-info-circle"></i> For inquiries: +91 XXXXX XXXXX | Formal Islamic attire requested</p>
             </div>
         </div>
     </div>
+
+    <script>
+        // Simple Islamic greeting
+        document.addEventListener('DOMContentLoaded', function() {
+            const hours = new Date().getHours();
+            let greeting = "السَّلَامُ عَلَيْكُمْ";
+            
+            if (hours < 12) greeting = "صباح الخير";
+            else if (hours < 18) greeting = "مساء الخير";
+            
+            // Optional: Display greeting in console
+            console.log(`%c${greeting} - Welcome to the Wedding Invitation`, 
+                'color: #0d5a42; font-size: 14px; font-weight: bold;');
+        });
+    </script>
 </body>
 </html>
